@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>DCS Fürth | Flexbox</title>
+  <link href="css/flexbox.css" type="text/css" rel="stylesheet" media="all"/>
+</head>
+<body>
+<h1>Flexbox</h1>
+
+<p>The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the
+  elements behave predictably when the page layout must accommodate different screen sizes and different display
+  devices. For many applications, the flexible box model provides an improvement over the block model in that it does
+  not use floats, nor do the flex container's margins collapse with the margins of its contents.</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">mdn</a>
+</body>
+
+
+<div class="example">
+  <h3>display: flex</h3>
+  <div class="item_container" id="item_container_1">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</div>
+
+<div class="example">
+  <h3>flex-direction (default => 'row')</h3>
+  <div class="item_container" id="item_container_2">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</div>
+
+<div class="example">
+  <h3>flex-wrap (default => 'nowrap')</h3>
+  <div class="item_container" id="item_container_3">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</div>
+
+<div class="example">
+  <h3>justify-content (X-Achse, default => 'flex-start')</h3>
+  <div class="item_container" id="item_container_4">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</div>
+
+<div class="example">
+  <h3>align-items (Y-Achse, default => 'flex-start')</h3>
+  <div class="item_container" id="item_container_5">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</div>
+
+<div class="example">
+  <h3>align-content (Y-Achse, bei Umbruch. Default => 'stretch')</h3>
+  <div class="item_container" id="item_container_6">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</div>
+
+
+</html>
