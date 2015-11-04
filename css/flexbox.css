@@ -1,45 +1,73 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("Lato-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("Lato-Regular.eot?#iefix") format("embedded-opentype"), url("Lato-Regular.woff") format("woff"), url("Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 body {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: Lato;
   padding: 20px; }
 
+#container_main {
+  width: 80%;
+  min-width: 980px;
+  margin: auto; }
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+
+.container {
+  width: 100%; }
+
 .example {
-  margin: 150px 0; }
-  .example .item_container {
-    background-color: #dddddd; }
+  margin: 150px 0;
+  padding: 9px 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px; }
   .example .item {
+    background-color: #666;
     padding: 10px;
-    border: 1px solid black;
-    margin: 5px;
-    min-height: 75px;
-    width: 150px;
-    color: white;
+    margin: 10px;
+    min-height: 50px;
     text-align: center;
     font-size: 2em;
-    background: #6fcfff linear-gradient(transparent 0%, rgba(0, 0, 0, 0.1) 100%);
-    text-shadow: 1px 1px 2px black;
-    display: inline-block; }
+    color: white;
+    border-radius: 4px; }
+  .example > h3 {
+    text-align: center;
+    color: #337ab7;
+    font-size: 1.2em; }
+
+.noflex {
+  display: block !important; }
 
 .item_container {
   display: flex; }
 
 #item_container_2 {
-  flex-direction: row-reverse; }
+  flex-direction: row; }
 
-#item_container_3 .item {
-  width: 300px; }
+#item_container_3 {
+  flex-wrap: nowrap; }
+  #item_container_3 .item {
+    width: 300px; }
 
 #item_container_4 {
-  justify-content: space-around; }
+  justify-content: flex-start; }
 
 #item_container_5 {
   height: 500px;
-  justify-content: space-around;
-  align-items: flex-start; }
+  align-items: stretch; }
 
 #item_container_6 {
   height: 500px;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-content: stretch; }
   #item_container_6 .item {
-    width: 40%; }
+    width: 30%; }
 
 /*# sourceMappingURL=flexbox.css.map */
