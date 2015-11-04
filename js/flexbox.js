@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  var currentSection = 0;
-  var nextSection;
+  var nextSection, currentSection = 0;
   $('body').on('keydown', function (e) {
+
     if (e.keyCode == 40) {
       currentSection += 1;
       nextSection = $('section').eq(currentSection);
@@ -18,5 +18,6 @@ $(document).ready(function () {
       nextSection = $('section').eq(currentSection);
       $('body').scrollTo(nextSection, 300);
     }
+
   })
 });

@@ -10,6 +10,7 @@ $gray_med: #666;
 body {
   font-family: Lato;
   padding: 20px;
+  margin: 0;
 }
 
 #container_main {
@@ -28,6 +29,15 @@ section {
   width: 100%;
 }
 
+.xxl {
+  font-size: 4em;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
 // styles
 
 .example {
@@ -37,7 +47,7 @@ section {
   border: 1px solid #e1e1e8;
   border-radius: 4px;
   .item {
-    background-color: $gray_med;
+    background-color: orange;
     padding: 10px;
     margin: 10px;
     min-height: 50px;
@@ -58,7 +68,14 @@ section {
   display: block !important;
 }
 
-// flex demo 1
+// flex demos
+
+#starter {
+  justify-content: center;
+  img {
+    height: 75%;
+  }
+}
 
 .item_container {
   display: flex;
@@ -92,7 +109,7 @@ section {
   height: 500px;
   //  justify-content: space-around;
   align-items: stretch;
-//    align-items: flex-start;
+  //    align-items: flex-start;
   //  align-items: flex-end;
   //  align-items: center;
   //  align-items: baseline;
@@ -106,14 +123,74 @@ section {
 #item_container_6 {
   height: 500px;
   flex-wrap: wrap;
-    align-content: stretch;
-//    align-content: flex-start;
+  align-content: stretch;
+  //    align-content: flex-start;
   //  align-content: flex-end;
   //  align-content: center;
   //  align-content: space-around;
   //  align-content: space-between;
   .item {
     width: 30%;
+  }
+}
+
+#item_container_7 {
+  .item {
+    width: 30%;
+  }
+}
+
+#item_container_8 {
+  .item {
+    border: 1px solid white;
+  }
+}
+
+#item_container_9 {
+  .item {
+    &:nth-child(1) {
+      flex-grow: 1;
+    }
+    &:nth-child(2) {
+      flex-grow: 1;
+    }
+    &:nth-child(3) {
+      flex-grow: 1;
+    }
+    &:nth-child(4) {
+      flex-grow: 1;
+    }
+    &:nth-child(5) {
+      flex-grow: 1;
+    }
+  }
+}
+
+#item_container_10 {
+  .item {
+    flex-basis: 30%;
+    margin: 0;
+    border: 1px solid #f7f7f9;
+    &:nth-child(1) {
+      flex-shrink: 1;
+    }
+    &:nth-child(2) {
+      flex-shrink: 1;
+    }
+  }
+}
+
+#item_container_11 {
+  height: 300px;
+  align-items: flex-start;
+  .item {
+    flex-basis: 30%;
+    margin: 0;
+    border: 1px solid #f7f7f9;
+    height: auto;
+    &:nth-child(1) {
+      opacity: 1;
+    }
   }
 }
 
