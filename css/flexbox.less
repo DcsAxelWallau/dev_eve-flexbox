@@ -1,9 +1,6 @@
 // flexbox.scss
 @import 'fonts';
 
-// variables
-$blue_light: #6fcfff;
-$gray_med: #666;
 
 // general
 
@@ -18,10 +15,11 @@ section {
   height: 100vh;
   display: flex;
   align-items: center;
-  transition: all 0.8s linear;
+  transition: all 0.5s linear;
   background-color: silver;
   &.active {
     background-color: white;
+
   }
   &:first-child {
     margin-top: 0;
@@ -78,7 +76,7 @@ ul {
 // flex demos
 
 #starter {
-  justify-content: center;
+  text-align: center;
   img {
     height: 75%;
   }
